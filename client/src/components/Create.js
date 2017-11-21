@@ -5,12 +5,19 @@ import ItemForm from "./ItemForm";
 
 class Search extends Component {
   state = {
-    item: ""
+    item: "",
+    class: ""
   }
 
-  handleInputChange = (event) => {
+  handleItemChange = (event) => {
     this.setState({
       item: event.target.value
+    });
+  }
+
+  handleClassChange = (event) => {
+    this.setState({
+      class: event.target.value
     });
   }
 
@@ -18,10 +25,12 @@ class Search extends Component {
     event.preventDefault();
     API.saveItem({
       item: this.state.item,
+      class: this.state.class,
       userId: this.props.userId
     }).then(res => {
       this.setState({
-        item: ""
+        item: "",
+        class: ""
       });
     });
   }
@@ -35,7 +44,8 @@ class Search extends Component {
           </div>
           <div className="card-body">
             <ItemForm
-              handleInputChange={this.handleInputChange}
+              handleItemChange={this.handleItemChange}
+              handleClassChange={this.handleClassChange}
               handleFormSubmit={this.handleFormSubmit}
             />
           </div>

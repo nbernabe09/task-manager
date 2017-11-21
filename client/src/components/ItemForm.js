@@ -3,15 +3,21 @@ import React from "react";
 const SearchForm = props => 
   <form>
     <div className="form-group">
-      <label htmlFor="term">Task:</label>
       <input 
         value={props.item}
-        onChange={props.handleInputChange}
+        onChange={props.handleItemChange}
         type="text"
         className="form-control"
         id="item"
         placeholder="New task..."
       />
+      <select
+        className="form-control"
+        onChange={props.handleClassChange}
+      >
+        <option>Task</option>
+        <option>Note</option>
+      </select>
     </div>
     <button
       type="submit"

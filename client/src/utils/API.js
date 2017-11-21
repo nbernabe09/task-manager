@@ -11,5 +11,10 @@ export default {
 
   saveItem: function(itemData) {
     return axios.post("/api/items", itemData);
+  },
+
+  editItem: function(itemData) {
+    console.log(itemData);
+    return axios.put("/api/items/" + itemData._id, itemData);
   }
 };

@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,MACE,kBAAoB,CAGtB,OACE,WAAa","file":"static/css/main.59b1ec03.css","sourcesContent":[".card {\n  margin-bottom: 32px;\n}\n\n.right {\n  float: right;\n}\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}

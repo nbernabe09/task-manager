@@ -33,7 +33,7 @@ class App extends Component {
   render() {
     const isLoggedIn = this.state.isLoggedIn;
 
-    let clientId = process.env.clientId || null;
+    let clientId = process.env.clientId;
     let create = null;
     let saved = null;
 

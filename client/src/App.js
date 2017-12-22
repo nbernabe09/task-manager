@@ -31,7 +31,6 @@ class App extends Component {
   }
 
   render() {
-    const inDevMode = false;
     const isLoggedIn = this.state.isLoggedIn;
 
     let clientId = process.env.clientId || null;

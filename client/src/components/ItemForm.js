@@ -4,6 +4,7 @@ const SearchForm = props =>
   <form>
     <div className="form-group">
       <input 
+        ref="itemRef"
         value={props.item}
         onChange={props.handleItemChange}
         type="text"

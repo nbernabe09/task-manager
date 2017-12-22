@@ -13,9 +13,9 @@ class Saved extends Component {
   }
 
   loadItems = () => {
-    console.log("loop");
     const userId = this.props.userId;
     if (userId) {
+      console.log("loop");
       API.getItems(userId).then(res =>
         this.setState({
           items: res.data

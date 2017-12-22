@@ -23,7 +23,6 @@ class Search extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-    console.log(this.refs.itemRef || "nope");
 
     API.saveItem({
       item: this.state.item,

@@ -34,15 +34,9 @@ class App extends Component {
     const inDevMode = false;
     const isLoggedIn = this.state.isLoggedIn;
 
-    let clientId = null;
+    let clientId = process.env.clientId || null;
     let create = null;
     let saved = null;
-
-    if (inDevMode) {
-      clientId = "658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com";
-    } else {
-      clientId = "1019189693764-n19n11pq9ocbk5p23cktchbbvpa8od3c.apps.googleusercontent.com";
-    }
 
     if (isLoggedIn) {
       create = <Create

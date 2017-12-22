@@ -6,7 +6,7 @@ import ItemForm from "./ItemForm";
 class Search extends Component {
   state = {
     item: "",
-    class: ""
+    class: "Task"
   }
 
   handleItemChange = (event) => {

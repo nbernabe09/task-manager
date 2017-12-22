@@ -29,8 +29,7 @@ class Search extends Component {
       userId: this.props.userId
     }).then(res => {
       this.setState({
-        item: "",
-        class: ""
+        item: ""
       });
     });
   }

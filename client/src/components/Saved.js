@@ -9,11 +9,11 @@ class Saved extends Component {
   }
 
   componentDidMount() {
-    console.log("loop");
     this.loadItems();    
   }
 
   loadItems = () => {
+    console.log("loop");
     const userId = this.props.userId;
     if (userId) {
       API.getItems(userId).then(res =>

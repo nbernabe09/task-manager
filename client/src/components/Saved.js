@@ -9,6 +9,7 @@ class Saved extends Component {
   }
 
   componentDidMount() {
+    console.log("loop");
     this.loadItems();    
   }
 

@@ -8,7 +8,7 @@ class Saved extends Component {
     items: []
   }
 
-  componentDidUpdate() {
+  componentDidMount() {
     this.loadItems();    
   }
 
